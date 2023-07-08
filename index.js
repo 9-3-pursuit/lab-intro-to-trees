@@ -9,16 +9,7 @@ class Tree {
   constructor(node) {
     this.root = node;
   }
-      /*
-        ┌─A─┐
-      ┌─B   C─┐
-      D       E─┐ 
-                F─┐
-                  G─┐
-                    H─┐
-                      I     
-    */
-   
+
   findNode(data, currentNode = this.root) {
     if (currentNode.data === data) {
       return currentNode;
@@ -32,19 +23,5 @@ class Tree {
     return null;
   }
 }
-
-
-
-// findNode(A)
-// findNode(B)
-// findNode(D)
-// findNode(E)
-// findNode(G)
-// findNode(H)
-
-
-// findNode(B)
-
-// findNode(D)
 
 module.exports = { TreeNode, Tree };
